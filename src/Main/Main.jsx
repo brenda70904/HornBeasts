@@ -1,6 +1,7 @@
 import React from "react";
 import HornBeasts from "../HornBeasts/Hornbeasts";
 
+
 export default class Main extends React.Component {
 
   render() {
