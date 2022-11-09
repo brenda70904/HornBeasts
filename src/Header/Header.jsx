@@ -4,7 +4,7 @@ export default class Header extends React.Component{
   render(){
     return (
       <>
-      <h1> Horn Beasts Project</h1>
+      <h1> Gallary of Horns</h1>
       </>
     )
   }
