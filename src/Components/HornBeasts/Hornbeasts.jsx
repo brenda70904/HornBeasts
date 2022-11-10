@@ -1,5 +1,6 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
+import Button from 'react-bootstrap/Button';
 import "./Hornbeasts.css"
 
 // import Button from "react-bootstrap/Botton";
@@ -29,6 +30,7 @@ handleModalClick =()=>{
       <>
         <Card className="beastCard">
           <Card.Img
+            className="cardImg"
             variant="top"
             src={this.props.image_url}
             id={this.props.id}
@@ -41,8 +43,9 @@ handleModalClick =()=>{
               <br />
               Number of Horns:{this.props.horns}
             </Card.Text>
-            <button onClick ={this.handleModalClick}>View</button> &nbsp;&nbsp;
-            <button onClick={this.handleClick}> ❤️ : {this.state.favCount} </button>
+            <Button variant="outline-dark" onClick ={this.handleModalClick}>View</Button> 
+            &nbsp;&nbsp;
+            <Button variant="outline-dark" onClick={this.handleClick}> ❤️ : {this.state.favCount} </Button>
           </Card.Body>
         </Card>
       </>

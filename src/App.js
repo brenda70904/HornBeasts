@@ -15,7 +15,8 @@ export default class App extends React.Component {
       description:"",
       horns:"",
       image_url:"",
-      alt:""
+      alt:"",
+      
     }
   }
 
@@ -34,11 +35,16 @@ export default class App extends React.Component {
     this.setState({ isModalshown: false });
   }
 
+  // handleSearch = () =>{
+  //   return data.map( input => input.filter( ) 
+
+  //   )filter( searchName => searchName.includes())
+  // }
   render() {
 
     return (
       <>
-        <Header />
+        <Header handleSearch={this.handleSearch}/>
         <Main
           data={data}
           isModalshown ={this.state.isModalshown}
