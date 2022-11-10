@@ -1,6 +1,6 @@
 import React from "react";
 import HornBeasts from "../HornBeasts/Hornbeasts";
-import data from "../../data.json";
+
 
 
 export default class Main extends React.Component {
@@ -9,7 +9,7 @@ export default class Main extends React.Component {
     return (
       <>
         {
-        data.map((beast, idx) =>
+        this.props.data.map((beast, idx) =>
             <HornBeasts
               key={idx}
               id={beast._id}
@@ -18,6 +18,9 @@ export default class Main extends React.Component {
               description={beast.description}
               keyword={beast.keyword}
               horns={beast.horns}
+              handleModalOpen={this.props.handleModalOpen}
+              handleModalClose={this.props.handleModalClose}
+              isModalshown ={this.props.isModalshown}
             />
           )
         }
