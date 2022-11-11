@@ -44,7 +44,8 @@ export default class App extends React.Component {
 
     return (
       <>
-        <Header handleSearch={this.handleSearch}/>
+        <Header data={data} />
+        {/* handleSearch={this.handleSearch}  // for serch bar */}
         <Main
           data={data}
           isModalshown ={this.state.isModalshown}

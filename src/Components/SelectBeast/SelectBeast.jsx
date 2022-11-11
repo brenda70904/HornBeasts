@@ -9,6 +9,7 @@ export default class SelectBeast extends React.Component{
   // }
   render(){
     return (
+      //Modal is for closer view, function is sent from App
       <Modal 
         show={this.props.isModalshown} 
         className="modalBody"
@@ -19,7 +20,7 @@ export default class SelectBeast extends React.Component{
       <Modal.Body >
         Description:&nbsp;{this.props.description}
         <br/>
-       <img src= {this.props.image_url} alt={this.props.alt} className="beastImage"/>
+      <img src= {this.props.image_url} alt={this.props.alt} className="beastImage"/>
         <br/>
         Number of horns:{this.props.horns}
       </Modal.Body>
