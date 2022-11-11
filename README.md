@@ -31,3 +31,10 @@ Estimate of time needed to complete: 2 hours
 Start time:2:05pm
 Finish time: 7:30pm
 Actual time needed to complete: 4 hours
+
+## Lab 4
+
+Estimate of time needed to complete: 2 hours
+Start time:3:00pm
+Finish time: 5:30pm
+Actual time needed to complete: 2.5 hours
